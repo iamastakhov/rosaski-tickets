@@ -1,0 +1,40 @@
+@import '../../../../../../../components/variables.css';
+
+
+.Block {
+  position: relative;
+  display: block;
+  text-align: center;
+  min-width: var(--Size08);
+  max-width: var(--Size08);
+}
+
+.Content {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 16px;
+  padding: 16px;
+}
+
+.Title,
+.Description {
+  display: block;
+  width: auto;
+  margin: 0;
+  padding: 16px;
+}
+
+.Title {
+  color: var(--ColorLight00Alpha100);
+}
+
+.Old {
+  display: inline-block;
+  text-decoration: line-through;
+}
+
+.Description {
+  padding-top: 0;
+  color: var(--ColorLight00Alpha040);
+}

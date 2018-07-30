@@ -1,0 +1,53 @@
+@import '../../../../variables.css';
+
+
+.Block {
+  position: relative;
+  display: inline-block;
+  min-width: var(--Size04);
+  max-width: var(--Size06);
+  vertical-align: top;
+  text-align: center;
+  overflow: hidden;
+}
+
+.Block .Content {
+  position: relative;
+  display: block;
+  margin: 16px;
+  padding: 16px;
+  overflow: hidden;
+}
+
+.Block .Title,
+.Block .Text {
+  display: block;
+  width: auto;
+  margin: 0;
+  padding: 16px;
+}
+
+.Block .Title {
+  color: var(--ColorLight00Alpha100);
+}
+
+.Block .Title.One {
+  font-weight: light;
+  padding-bottom: 0;
+}
+
+.Block .Title.Two {
+  font-weight: bold;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.Block .Title.Three {
+  font-weight: bold;
+  padding-top: 0;
+}
+
+.Block .Text {
+  padding: 16px;
+  color: var(--ColorLight00Alpha060);
+}

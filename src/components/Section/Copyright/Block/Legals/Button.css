@@ -1,0 +1,31 @@
+@import '../../../../variables.css';
+
+
+.Button {
+  display: inline-block;
+  width: auto;
+  margin: 0;
+  padding: 16px;
+}
+
+.Button .Title {
+  display: inline-block;
+  line-height: 16px;
+  color: var(--ColorDark00Alpha040);
+}
+
+.Button:hover .Title {
+  color: var(--ColorDark00Alpha060);
+}
+
+.Button.Active {
+  background-color: var(--ColorLight03);
+}
+
+.Button.Active:hover {
+  cursor: default;
+}
+
+.Button.Active .Title {
+  color: var(--ColorDark00Alpha100);
+}

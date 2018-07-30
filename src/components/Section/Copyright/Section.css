@@ -1,0 +1,40 @@
+@import '../../variables.css';
+
+
+.Section {
+  z-index: 100;
+  position: relative;
+  overflow: visible;
+  width: 100%;
+  height: auto;
+}
+
+.Section .Content {
+  max-width: var(--Size12);
+  margin: 0 auto;
+}
+
+.Section .Content .Left {
+  float: left;
+}
+
+.Section .Content .Right {
+  float: right;
+}
+
+.Section .Content .Both {
+  float: none;
+  clear: both;
+}
+
+.Section .Background.Color {
+  z-index: -100;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: var(--ColorLight00);
+}

@@ -1,0 +1,11 @@
+@import '../variables.css';
+
+.Page {
+  margin: 0;
+  padding: 0;
+}
+
+.Content {
+  margin: 0 auto;
+  padding: 0;
+}

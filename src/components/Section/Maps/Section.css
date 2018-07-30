@@ -1,0 +1,43 @@
+@import '../../../../../components/variables.css';
+
+
+.Section {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  min-height: var(--Size06);
+  max-height: var(--Size06);
+}
+
+.Section .Content {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+
+.Section .Background.Image {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ min-width: 100%;
+ min-height: 100vh;
+ width: auto;
+ height: auto;
+ transform: translateX(-50%) translateY(-50%);
+ background-size: cover;
+}
+
+.Section .Background.Image {
+z-index: -99;
+}
+
+.Section .Background.Gradient {
+ z-index: -100;
+ background: linear-gradient(-45deg, var(--ColorBrand00Alpha100), var(--ColorBrand01Alpha100));
+}

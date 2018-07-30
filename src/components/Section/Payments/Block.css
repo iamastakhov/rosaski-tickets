@@ -1,0 +1,42 @@
+@import '../../../../../components/variables.css';
+
+
+.Block {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  min-width: var(--Size01);
+  max-width: var(--Size01);
+}
+
+.Container {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 8px;
+  padding: 0;
+  border-radius: 0;
+}
+
+.Icon {
+  z-index: 200;
+  display: block;
+  width: 48px;
+  height: 48px;
+  margin: 0;
+  padding: 24px;
+  color: var(--ColorLight00Alpha020);
+}
+
+.Icon {
+  cursor: pointer;
+  color: var(--ColorLight00Alpha020);
+}
+
+.Icon.Active {
+  cursor: default;
+  color: var(--ColorLight00Alpha100);
+}
+
+

@@ -1,0 +1,151 @@
+@import '../../../../../../../components/variables.css';
+
+
+.Block {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  min-width: var(--Size06);
+  max-width: var(--Size06);
+}
+
+.Content {
+  position: relative;
+  display: block;
+  overflow: visible;
+  margin: 16px;
+  padding: 16px;
+}
+
+.Title {
+  display: block;
+  width: auto;
+  margin: 0;
+  padding: 16px;
+}
+
+.Title {
+  color: var(--ColorBrand00Alpha100);
+}
+
+.Divider {
+  margin: 16px;
+  background: var(--ColorLight03);
+}
+
+.Form {
+  margin: 0;
+  padding: 0 16px;
+}
+
+.Form .Input::placeholder,
+.Form .Textarea::placeholder {
+  text-align: center;
+  color: var(--ColorDarkAlpha040);
+}
+
+.Form .Input,
+.Form .Textarea {
+  text-align: center;
+  display: block;
+  font-size: 14px;
+  line-height : 18px;
+  width: 100%;
+  margin: 0;
+  padding: 16px 0;
+  color: var(--ColorDarkAlpha100);
+  border-bottom: 1px solid;
+  border-color: var(--ColorDarkAlpha040);
+  background: none;
+}
+
+.Form .Input:hover,
+.Form .Textarea:hover {
+  color: var(--ColorDarkAlpha100);
+  border-bottom: 1px solid var(--ColorBrand00Alpha100);
+}
+
+
+.Form .Input:focus,
+.Form .Textarea:focus {
+  border-bottom: 1px solid var(--ColorBrand00Alpha100);
+}
+
+.Textarea {
+  resize: none;
+}
+
+.Meta {
+  display: block;
+  width: 100%;
+  height: 32px;
+  margin: 0;
+  padding: 64px 0 16px 0;
+  float: none;
+}
+
+.Left {
+  float: left;
+}
+
+.Right {
+  float: right;
+}
+
+.Button {
+  display: inline-block;
+  width: auto;
+  margin: 0;
+  padding: 16px;
+  background: none;
+}
+
+
+.Button .Title,
+.Button .Glyph {
+  display: inline-block;
+  width: auto;
+  line-height: 16px;
+  margin: 0;
+  padding: 0;
+  color: var(--ColorDarkAlpha040);
+}
+
+.Button .Glyph {
+  font-size: 16px;
+}
+
+.Button .Glyph.Left {
+  margin-right: 16px;
+}
+
+.Button .Glyph.Right {
+  margin-left: 16px;
+}
+
+.Button:hover .Title,
+.Button:hover .Glyph {
+  color: var(--ColorDarkAlpha060);
+}
+
+.Button.Highlight .Title,
+.Button.Highlight .Glyph {
+  color: var(--ColorBrand00Alpha080);
+}
+
+.Button.Highlight:hover .Title,
+.Button.Highlight:hover .Glyph {
+  color: var(--ColorBrand00Alpha100);
+}
+
+.Background.Color {
+  z-index: -40;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: var(--ColorLight00);
+}
+

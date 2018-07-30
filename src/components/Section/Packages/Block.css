@@ -1,0 +1,160 @@
+@import '../../variables.css';
+
+
+.Block {
+  position: relative;
+  display: inline-block;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: var(--Size06);
+  max-height: var(--Size06);
+  text-align: left;
+  overflow: hidden;
+}
+
+.Block .Column {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  min-width: 50%;
+  max-width: 50%;
+  overflow: hidden;
+}
+
+.Block .Column.One .Content  {
+  float: right;
+  min-width: var(--Size06);
+  max-width: var(--Size06);
+  margin-top: 64px;
+}
+
+.Block .Column.Four .Content  {
+  float: left;
+  min-width: var(--Size06);
+  max-width: var(--Size06);
+  margin-top: 64px;
+}
+
+.Block .Column.One .Content .Border,
+.Block .Column.Four .Content .Border {
+  margin: 16px;
+  padding: 16px;
+}
+
+.Block .Divider {
+  display: block;
+  width: auto;
+  height: auto;
+  padding: 0 16px;
+}
+
+.Block .Divider .Line {
+  width: 100%;
+  height: 2px;
+  background: var(--ColorLight04);
+}
+
+.Block .Description {
+  padding: 16px 0;
+}
+
+.Block .Description .Title,
+.Block .Description .Text {
+  padding: 16px;
+}
+
+.Block .Description .Title {
+  color: var(--ColorDark00Alpha100);
+}
+
+.Block .Description .Title a {
+  text-decoration: underline;
+  color: var(--ColorBrand00Alpha060);
+}
+
+.Block .Description .Title a:hover {
+  color: var(--ColorBrand00Alpha100);
+}
+
+.Block .Description .Text {
+  color: var(--ColorDark00Alpha060);
+}
+
+.Block .List {
+  padding: 8px 0 8px 32px;
+  list-style: disc outside;
+  color: var(--ColorDark00Alpha040);
+}
+
+.Block .List .Title {
+  padding: 8px 16px; 
+  color: var(--ColorDark00Alpha040);
+}
+
+.Block .Buy {
+  padding: 16px 0;
+}
+
+.Block .Buy .Left {
+  float: left;
+}
+
+.Block .Buy .Right {
+  float: right;
+}
+
+.Block .Buy .Both {
+  float: none;
+  clear: both;
+}
+
+.Block .Button {
+  display: inline-block;
+  margin: 0;
+  padding: 16px;
+  cursor: pointer;
+}
+
+.Block .Button .Glyph,
+.Block .Button .Title,
+.Block .Button .Label {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  line-height: 16px;
+}
+
+.Block .Button .Glyph {
+  margin-top: -4px;
+  font-size: 16px;
+}
+
+.Block .Button .Glyph.Right {
+  padding-left: 16px;
+}
+
+.Block .Button .Glyph,
+.Block .Button .Title {
+  color: var(--ColorBrand00Alpha060);
+  cursor: pointer;
+}
+
+.Block .Button .Title {
+  padding-right: 8px;
+}
+
+.Block .Button .Label {
+  padding-right: 16px;
+  color: var(--ColorDark00Alpha060);
+  cursor: default;
+}
+
+.Block .Button:hover .Glyph,
+.Block .Button:hover .Title {
+  color: var(--ColorBrand00Alpha100);
+}
+
+.Block .Image {
+  min-height: var(--Size06);
+  max-height: var(--Size06);
+}

@@ -1,0 +1,184 @@
+@import '../../../../../components/variables.css';
+
+
+.Block {
+  position: relative;
+  display: inline-block;
+  text-align: left;
+  min-width: var(--Size04);
+  max-width: var(--Size04);
+  vertical-align: top;
+}
+
+.Block .Content {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 16px;
+  border-radius: 8px;
+}
+
+.Block .Divider {
+  display: block;
+  width: auto;
+  height: auto;
+  padding: 0 32px;
+}
+
+.Block .Divider .Line {
+  width: 100%;
+  height: 2px;
+  background: var(--ColorLight03);
+}
+
+.Block .Media {
+  display: block;
+  width: auto;
+  height: auto;
+  padding: 0;
+}
+
+.Block .Media .Image {
+  max-width: 100%;
+}
+
+.Block .Meta,
+.Block .Control,
+.Block .Description,
+.Block .Stats {
+  display: block;
+  width: auto;
+  height: auto;
+  padding: 16px;
+}
+
+.Block .Meta .Left,
+.Block .Control .Left,
+.Block .Stats .Left {
+  float: left;
+}
+
+.Block .Meta .Right,
+.Block .Control .Right,
+.Block .Stats .Right {
+  float: right;
+}
+
+.Block .Meta .Both,
+.Block .Control .Both,
+.Block .Stats .Both {
+  float: none;
+  clear: both;
+}
+
+.Block .Title,
+.Block .Text {
+  padding: 16px;
+}
+
+.Block .Title {
+  color: var(--ColorDarkAlpha100);
+}
+
+.Block .Title a {
+  text-decoration: underline;
+  color: var(--ColorBrandAlpha080);
+}
+
+.Block .Title a:hover {
+  color: var(--ColorBrandAlpha100);
+  text-decoration: none;
+}
+
+.Block .Text {
+  color: var(--ColorDarkAlpha040);
+}
+
+.Block .Button {
+  display: inline-block;
+  margin: 0;
+  padding: 16px;
+}
+
+.Block .Button.Link {
+  cursor: pointer;
+}
+
+
+.Block .Button .Glyph,
+.Block .Button .Title,
+.Block .Button .Label {
+  display: inline-block;
+  margin: 0;
+  padding: 32px 0;
+  line-height: 16px;
+}
+
+.Block .Button .Avatar {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  margin: 0;
+  padding: 0;
+  border-radius: 40px;
+}
+
+.Block .Button .Avatar.Left {
+  margin-right: 16px;
+}
+
+.Block .Button .Glyph {
+  margin-top: -6px;
+  font-size: 16px;
+}
+
+.Block .Button .Glyph.Left {
+  float: none;
+  margin-right: 16px;
+} 
+
+.Block .Button .Glyph.Right {
+  float: none;
+  margin-left: 16px;
+} 
+
+.Block .Button,
+.Block .Button .Avatar,
+.Block .Button .Label {
+  cursor: default;
+}
+
+.Block .Button .Label {
+  padding-left: 16px;
+  color: var(--ColorDarkAlpha100);
+}
+
+.Block .Button.Highlight {
+  cursor: pointer;
+}
+
+.Block .Button.Highlight .Glyph,
+.Block .Button.Highlight .Title {
+  color: var(--ColorBrand00Alpha080);
+}
+
+.Block .Button.Highlight:hover .Glyph,
+.Block .Button.Highlight:hover .Title {
+  color: var(--ColorBrand00Alpha100);
+}
+
+.Block .Background.Color {
+  position: absolute;
+  max-width: 100%;
+  top: 16px;
+  right: 16px;
+  bottom: 16px;
+  left: 16px;
+  border-radius: 8px;
+}
+
+.Block .Background.Color {
+  z-index: -60;
+  background: var(--ColorLight01);
+}
+

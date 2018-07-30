@@ -1,0 +1,13 @@
+@import '../../../../variables.css';
+
+
+.Block {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.Block .Content {
+  margin: 16px;
+  padding: 16px;
+}

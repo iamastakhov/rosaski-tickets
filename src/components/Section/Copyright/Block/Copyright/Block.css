@@ -1,0 +1,47 @@
+@import '../../../../variables.css';
+
+
+.Block {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.Content {
+  margin: 16px;
+  padding: 16px;
+}
+
+.Button {
+  display: inline-block;
+  width: auto;
+  margin: 0;
+  padding: 16px;
+}
+
+.Button .Glyph,
+.Button .Label {
+  display: inline-block;
+  line-height: 16px;
+}
+
+.Button .Glyph {
+  margin-top: -4px;
+  font-size: 16px;
+}
+
+.Button .Glyph.Center {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.Button .Glyph,
+.Button .Label {
+  color: var(--ColorDarkAlpha020);
+}
+
+.Button:hover .Glyph,
+.Button:hover .Label {
+  cursor: default;
+}
+

@@ -1,0 +1,80 @@
+@import '../../../components/variables.css';
+
+
+.Block {
+  position: relative;
+  display: inline-block;
+  min-width: var(--Size04);
+  max-width: var(--Size04);
+}
+
+.Block .Column.One,
+.Block .Column.Two {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.Block .Column.One {
+  min-width: var(--Size01);
+  max-width: var(--Size01);
+}
+
+.Block .Column.Two {
+  min-width: var(--Size03);
+  max-width: var(--Size03);
+}
+
+.Block .Both {
+  float: none;
+  clear: both;
+}
+
+.Block .Icon {
+  position: relative;
+  display: block;
+  margin: 16px 0 16px 16px;
+  padding: 16px 0 16px 16px;
+}
+
+.Block .Icon .Image {
+  width: 100%;
+  margin: 16px 0 16px 16px;
+}
+
+.Block .Content {
+  position: relative;
+  display: block;
+  margin: 16px;
+  padding: 16px;
+  text-align: left;
+  overflow: hidden;
+}
+
+.Block .Description {
+  display: block;
+  width: auto;
+  height: auto;
+}
+
+.Block .Description .Title,
+.Block .Description .Text {
+  padding: 16px;
+}
+
+.Block .Description .Title {
+  color: var(--ColorDark00Alpha100);
+}
+
+.Block .Description .Title a {
+  text-decoration: underline;
+  color: var(--ColorBrand00Alpha080);
+}
+
+.Block .Description .Title a:hover {
+  color: var(--ColorBrand00Alpha100);
+  text-decoration: none;
+}
+
+.Block .Description .Text {
+  color: var(--ColorDark00Alpha040);
+}

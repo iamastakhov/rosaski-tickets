@@ -1,0 +1,95 @@
+@import '../../../../variables.css';
+
+
+.Block {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+  text-align: left;
+  overflow: visible;
+}
+
+.Block .Content {
+  position: relative;
+  display: block;
+  margin: 16px;
+  padding: 16px;
+  overflow: visible;
+}
+
+.Block .Menu .Content {
+  display: none;
+}
+
+.Block .Button {
+  width: auto;
+  margin: 0;
+  padding: 16px;
+}
+
+.Block .Menu .Header .Button {
+  display: inline-block;
+}
+
+.Block .Menu .Content .Button {  
+  display: block;
+}
+
+.Block .Button .Glyph,
+.Block .Button .Title {
+  display: inline-block;
+  line-height: 16px;
+  color: var(--ColorLight00Alpha060);
+}
+
+.Block .Menu .Header .Button .Glyph,
+.Block .Menu .Header .Button .Title {
+  cursor: default;
+}
+
+.Block .Menu .Header .Button .Glyph {
+  margin-top: -6px;
+  font-size: 16px;
+}
+
+.Block .Menu .Header .Button .Glyph.Right {
+  margin-left: 16px;
+}
+
+.Block:hover .Menu .Header .Button {
+  background: var(--ColorLight00);
+  border-radius: 8px 8px 0 0;
+}
+
+.Block:hover .Menu .Header .Button .Glyph,
+.Block:hover .Menu .Header .Button .Title {
+  color: var(--ColorBrand00Alpha100);
+}
+
+.Block:hover .Menu .Content {
+  position: absolute;
+  display: block;
+  min-width: 185px;
+  margin: 0;
+  padding: 0;
+  border-radius: 0 0 8px 8px;
+  background: var(--ColorLight00);
+  box-shadow: var(--Shadow);
+  overflow: hidden;
+  z-index: 10;
+}
+
+.Block:hover .Menu .Content .Button {
+  display: block;
+}
+
+.Block:hover .Menu .Content .Button .Title {
+  color: var(--ColorBrand00Alpha060);
+}
+
+.Block:hover .Menu .Content .Button:hover .Title {
+  color: var(--ColorBrand00Alpha100);
+}

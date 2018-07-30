@@ -1,0 +1,31 @@
+@import '../../variables.css';
+
+
+.Section {
+  position: absolute; 
+  width: 100%;
+  height: auto;
+  bottom: 0;
+}
+
+.Section .Content {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: var(--Size12);
+  margin: 0 auto;
+  padding: 0;
+}
+
+.Section .Content .Left {
+  float: left;
+}
+
+.Section .Content .Right {
+  float: right;
+}
+
+.Section .Content .Both {
+  float: none;
+  clear: both;
+}
